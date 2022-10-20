@@ -9,3 +9,18 @@ CREATE TABLE animals (
     weight_kg INTEGER,
     species VARCHAR
 );
+
+CREATE TABLE owners (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    full_name VARCHAR,
+    age INTEGER
+);
+
+CREATE TABLE species (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    name VARCHAR
+);
+
+ALTER TABLE animals DROP COLUMN species;
+ALTER TABLE animals ADD COLUMN species_id INTEGER REFERENCES species(id);
+ALTER TABLE animals ADD COLUMN owner_id INTEGER REFERENCES owners(id);
