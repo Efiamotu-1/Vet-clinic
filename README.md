@@ -3,8 +3,7 @@
 > In this project, I used a relational database to create the initial data structure for a vet clinic. I created tables to store animals' information, insert some data into it, and query it.
 
 ## Schema Diagram
-
-<iframe width="100%" height="500px" style="box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); border-radius:15px;" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Embedded DrawSQL IFrame" frameborder="0" src="https://drawsql.app/teams/habeebs-team/diagrams/vet-clinic-schema/embed"></iframe>
+![](images/schema-diagram.png)
 
 ## Getting Started
 
