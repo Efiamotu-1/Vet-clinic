@@ -1,4 +1,4 @@
-/* Database schema to keep the structure of entire database. */
+/* Database schema to keep the structure of entire database.. */
 
 CREATE TABLE animals (
     id BIGSERIAL NOT NULL PRIMARY KEY,
@@ -45,6 +45,3 @@ CREATE TABLE visits (
 
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
-CREATE INDEX animal_index ON visits(animal_id);
-CREATE INDEX vet_index ON visits(vet_id);
-CREATE INDEX email_index ON owners(email);
